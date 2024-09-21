@@ -17,7 +17,7 @@ PageSpeed Insights:
 
 - [Mobile](https://pagespeed.web.dev/analysis/https-fuelcalcs-netlify-app/1d2f4542x5?hl=en&form_factor=mobile): <br/>
   ![image](./githubimages/mobile-insights.png) <br/>
-- [Dekstop](https://pagespeed.web.dev/analysis/https-fuelcalcs-netlify-app/1d2f4542x5?hl=en&form_factor=desktop): <br/>
+- [Desktop](https://pagespeed.web.dev/analysis/https-fuelcalcs-netlify-app/1d2f4542x5?hl=en&form_factor=desktop): <br/>
   ![image](./githubimages/desktop-insights.png)
 
 ## How can I try it? 🤔
