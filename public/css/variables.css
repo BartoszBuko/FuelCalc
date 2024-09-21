@@ -1,0 +1,9 @@
+:root {
+  --main-bg-color: hsl(0, 9%, 93%);
+  --secondary-bg-color: hsl(214, 76%, 19%);
+  --accent-color: hsl(15, 97%, 60%);
+  --main-text-color: hsl(0, 9%, 93%);
+  --secondary-text-color: hsl(214, 76%, 19%);
+  --left-consumption: -65vw;
+  --left-trip: -100vw;
+}

@@ -1,0 +1,227 @@
+@import "variables.css";
+@import "config.css";
+
+.header {
+  text-align: center;
+  padding: 1.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 0.6rem;
+}
+
+.desc {
+  font-size: clamp(1.3rem, 2vw, 2.4rem);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.select__option {
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.select__option > * {
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.select__option > *:hover {
+  color: var(--accent-color);
+}
+
+.main__calculate {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  padding: 1.2rem;
+  width: 90vw;
+  max-width: 1000px;
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main__calculate--desc {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.6rem;
+  padding: 1.2rem;
+}
+
+.calculate__button--btn {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
+  padding: 0.2rem 1.1rem;
+  border: 2px solid var(--secondary-bg-color);
+  border-color: var(--secondary-bg-color);
+  outline: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.calculate__button--btn:hover {
+  background-color: var(--accent-color);
+}
+
+.main__calculate--result {
+  background-color: var(--accent-color);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__calculate--result--text {
+  margin-bottom: 1rem;
+}
+
+.main__calculate--desc--text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main__calculate--desc--input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid var(--secondary-bg-color);
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.6rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2rem;
+  }
+
+  .main {
+    flex-direction: row-reverse;
+    align-items: start;
+    column-gap: 2rem;
+    margin-top: 8rem;
+    flex-grow: 1;
+  }
+
+  .select__option {
+    flex: 1;
+  }
+
+  .active-1,
+  .active-2 {
+    position: relative;
+    user-select: none;
+  }
+
+  .active-1::before {
+    content: "";
+    position: absolute;
+    width: 80vw;
+    height: 2px;
+    background-color: var(--secondary-bg-color);
+    bottom: -5px;
+    left: var(--left-consumption);
+    z-index: -1;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+  }
+
+  .active-2::before {
+    content: "";
+    position: absolute;
+    width: 80vw;
+    height: 2px;
+    background-color: var(--secondary-bg-color);
+    bottom: -5px;
+    left: var(--left-trip);
+    z-index: -1;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+  }
+
+  .main__calculate {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  .main__calculate--desc {
+    width: 50%;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    margin-top: 2rem;
+  }
+
+  .main__calculate--result {
+    width: 40%;
+    height: 8rem;
+  }
+}

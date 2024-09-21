@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Oblicz spalanie, kalkulator spalania paliwa, ile spali moje auto, spalanie kalkulator">
+  <meta name="description" content="Kalkulator spalania paliwa. Oblicz spalanie swojego auta.">
+  <meta name="author" content="Bartosz Buko">
+  <title>Fuel Calc</title>
+  <link rel="stylesheet" href="public/css/main.css">
+  <script src="public/js/index.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <img src="public/images/Logo.png" alt="Fuel Calc" class="logo">
+     <h1 class="desc">Oblicz spalanie i koszty podróży</h1>
+  </header>
+  <main class="main">
+    <section class="select__option">
+      <h2 class="calculate__consumption active-1 accent" data-consumption-btn>Średnie spalanie</h2>
+      <h2 class="calculate__trip--price active-2" data-trip-price-btn>Koszt podróży</h2>
+    </section>
+    <section class="main__calculate">
+           <div class="main__calculate--desc">
+            <div class="main__calculate--desc--top">
+              <p class="main__calculate--desc--text" data-consumption-text>Spalone paliwo ( w litrach )</p>
+              <input type="number" class="main__calculate--desc--input" id="fuelConsumption" placeholder="0" data-consumption>
+            </div>
+            <div class="main__calculate--desc--center">
+              <p class="main__calculate--desc--text" data-distance-text>Przejechany dystans ( w km )</p>
+              <input type="number" class="main__calculate--desc--input" id="distance" placeholder="0" data-trip>
+             </div>
+              <div class="main__calculate--desc--bottom hidden" data-trip-price-div>
+              <p class="main__calculate--desc--text ">Koszt paliwa ( np 5.84 )</p>
+              <input type="number" class="main__calculate--desc--input" id="fuel__price" placeholder="0" data-trip-price>
+             </div>
+             <div class="calculate__button">
+              <button class="calculate__button--btn" id="calculate" data-calculate>Oblicz</button>
+             </div>
+           </div>   
+           <div class="main__calculate--result">
+            <p class="main__calculate--result--text" data-result-text-consumption>Średnie spalanie na 100km wynosi: </p>
+            <p class="main__calculate--result--text hidden" data-result-text-trip>Koszt podróży wynosi: </p>
+            <p class="" data-result-p-consumption><span class="main__calculate--result--text--value" id="result" data-result-consumption>0</span> l/100km</p>    
+            <p class="hidden" data-result-p-trip><span class="main__calculate--result--text--value" id="result" data-result-trip>0</span> zł</p>    
+    </section>
+  </main>
+  <footer class="footer">`
+    <p class="footer__text">Fuel Calc &copy; <span class="year" data-year></span></p>
+  </footer>
+</body>
+</html>
