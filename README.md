@@ -7,7 +7,7 @@
 
 ## About 👀
 
-<img src="https://socialify.git.ci/BartoszBuko/portfolio/image?description=1&language=1&name=1&owner=1&pattern=Solid&theme=Dark" alt="FuelCalc" width="640" height="320" />
+<img src="https://socialify.git.ci/BartoszBuko/FuelCalc/image?description=1&descriptionEditable=Calculate%20fuel%20consumption%20and%20trip%20price&font=Inter&language=1&name=1&owner=1&pattern=Solid&theme=Dark" alt="FuelCalc" width="640" height="320" />
 
 Fuel Calc. <br/>
 
