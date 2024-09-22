@@ -51,7 +51,7 @@ I made design all by myself
 ![image](./githubimages/desktop-page.png)
 ![image](./githubimages/mobile-page.png)
 
-Figma: [click here](https://www.figma.com/file/loNidJIspbYr7Ovkaar3Ue/portfolio?type=design&node-id=0%3A1&t=dCv3DtJCBgh5dOl3-1) <br>
+Figma: [click here](https://www.figma.com/design/ZUw7mUmvrpNLFQGSdEBn3V/RWD?node-id=0-1&t=vKQQHxNcpERlgEEF-0) <br>
 
 ## Technological facilities 🛠️
 
