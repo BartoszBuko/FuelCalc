@@ -57,4 +57,4 @@ Figma: [click here](https://www.figma.com/design/ZUw7mUmvrpNLFQGSdEBn3V/RWD?node
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- TypeScript 5.9.3
